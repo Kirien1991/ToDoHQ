@@ -1,0 +1,14 @@
+.dates {
+    font-family: $font-inter;
+    font-weight: 500;
+
+    &__day {
+        color: $dark;
+        font-size: 15px;
+    }
+
+    &__date {
+        color: $lightblue2;
+        font-size: 14px;
+    }
+}
