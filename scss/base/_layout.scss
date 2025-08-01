@@ -1,3 +1,4 @@
+//dashboard
 .layout {
     display: flex;
     flex-direction: column;
@@ -25,4 +26,36 @@
     background-color: orange;
     width: 958px;
 
+}
+
+//register
+.layout-auth {
+    background-color: $pink;
+    background-image: url('/image/register/register.png');
+    min-height: 1024px;
+    display: flex;
+    align-items: center;
+
+    &__content {
+        width: 1236px;
+        height: 767px;
+        margin: 0 auto;
+        background-color: $white;
+        border-radius: 10px;
+        border: 1px solid $border;
+        display: flex;
+    }
+
+    &__left {
+        width: 50%;
+
+        img {
+            margin-top: 103px;
+        }
+    }
+
+    &__right {
+        width: 50%;
+
+    }
 }

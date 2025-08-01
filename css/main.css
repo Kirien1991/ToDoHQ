@@ -46,6 +46,32 @@ html body {
   width: 958px;
 }
 
+.layout-auth {
+  background-color: #FF6767;
+  background-image: url("/image/register/register.png");
+  min-height: 1024px;
+  display: flex;
+  align-items: center;
+}
+.layout-auth__content {
+  width: 1236px;
+  height: 767px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  border: 1px solid #565454;
+  display: flex;
+}
+.layout-auth__left {
+  width: 50%;
+}
+.layout-auth__left img {
+  margin-top: 103px;
+}
+.layout-auth__right {
+  width: 50%;
+}
+
 /* Reset and base styles  */
 * {
   padding: 0px;
@@ -159,7 +185,7 @@ input[type=file] {
 }
 
 .header {
-  background-color: F8F8F8;
+  background-color: #F8F8F8;
   box-shadow: 0 4px 12px 0px rgba(0, 0, 0, 0.07);
   padding: 38px 0 24px 0;
 }
@@ -228,10 +254,33 @@ input[type=file] {
   font-size: 14px;
 }
 
-.register .container {
-  padding: 0 15px;
-  max-width: 1236px;
-  min-height: 767px;
-  margin: 0 auto;
-  box-sizing: content-box;
+.register-title {
+  font-family: "Montserrat", serif;
+  font-weight: 700;
+  font-size: 36px;
+  color: #212427;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.register-form__group {
+  width: 559px;
+  border-radius: 8px;
+  border: 1px solid #565454;
+  display: flex;
+  align-items: center;
+  padding: 18px;
+}
+.register-form__group input::placeholder {
+  font-family: "Montserrat", serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #999999;
+}
+.register-form__group label img {
+  width: 22px;
+  height: 22px;
 }
