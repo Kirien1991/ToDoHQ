@@ -1,9 +1,10 @@
 //base
+@import "./base/vars";
 @import "./base/base";
 @import "./base/layout";
 @import "./base/mixin";
 @import "./base/reset";
-@import "./base/vars";
+
 //block
 @import "./block/header";
 @import "./block/logo";
