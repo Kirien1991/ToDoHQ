@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDoHQ</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <div class="layout-top">
+        <header class="header">
+          <div class="container">
+            <div class="header__content">
+              <a href="/" class="logo"><span>Dash</span>board</a>
+
+              <div class="header__flex">
+                <div class="search">
+                  <form class="search__form">
+                    <input
+                      type="text"
+                      placeholder="Search your task here..."
+                      class="search__input"
+                    />
+                    <button type="submit" class="search-button">
+                      <div class="icon">
+                        <img src="/image/header/SearchICon.svg" alt="Search" />
+                      </div>
+                    </button>
+                  </form>
+                </div>
+
+                <div class="header__item">
+                  <div class="header__icon">
+                    <div class="icon">
+                      <img
+                        src="/image/header/Notifications.svg"
+                        alt="Notifications"
+                      />
+                    </div>
+
+                    <div class="icon">
+                      <img src="/image/header/Cal.svg" alt="Cal" />
+                    </div>
+                  </div>
+
+                  <div class="dates">
+                    <div class="dates__day">Tuesday</div>
+                    <div class="dates__date">20/01/2023</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+      <div class="layout-bottom">
+        <div class="layout-left">left</div>
+        <div class="layout-content">content</div>
+      </div>
+    </div>
+  </body>
+</html>

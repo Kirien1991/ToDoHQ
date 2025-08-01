@@ -1,8 +1,49 @@
+html body {
+  height: 100%;
+}
+
 .container {
   padding: 0 15px;
   max-width: 1440px;
   margin: 0 auto;
   box-sizing: content-box;
+}
+
+.icon {
+  width: 36px;
+  height: 36px;
+  background-color: red;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon img {
+  width: 15px;
+  height: 15px;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.layout-bottom {
+  display: flex;
+  height: 868px;
+  gap: 113px;
+  margin: 0 auto;
+}
+
+.layout-left {
+  background-color: red;
+  width: 368px;
+}
+
+.layout-content {
+  background-color: orange;
+  width: 958px;
 }
 
 /* Reset and base styles  */
@@ -124,11 +165,20 @@ input[type=file] {
 }
 .header__content {
   display: flex;
-  justify-content: space-between;
+  gap: 151px;
+}
+.header__flex {
+  display: flex;
+  align-items: center;
+  gap: 81px;
 }
 .header__item {
   display: flex;
-  align-items: center;
+  gap: 37px;
+}
+.header__icon {
+  display: flex;
+  gap: 6px;
 }
 
 .logo {
@@ -137,6 +187,7 @@ input[type=file] {
   font-weight: 600;
   font-family: "Inter", sans-serif;
   letter-spacing: 1px;
+  max-width: 100%;
 }
 .logo span {
   color: #FF6767;
@@ -144,12 +195,10 @@ input[type=file] {
 
 .search {
   width: 695px;
-  margin-right: 128px;
 }
 .search__form {
   display: flex;
   border-radius: 8px;
-  overflow: hidden;
   box-shadow: 5px 21px 28px 0px rgba(0, 0, 0, 0.07);
 }
 .search__input {
@@ -166,11 +215,6 @@ input[type=file] {
   color: #A1A3AB;
 }
 
-.search-button img {
-  width: 36px;
-  height: 36px;
-}
-
 .dates {
   font-family: "Inter", sans-serif;
   font-weight: 500;
@@ -182,4 +226,12 @@ input[type=file] {
 .dates__date {
   color: #3ABEFF;
   font-size: 14px;
+}
+
+.register .container {
+  padding: 0 15px;
+  max-width: 1236px;
+  min-height: 767px;
+  margin: 0 auto;
+  box-sizing: content-box;
 }

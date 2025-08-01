@@ -1,0 +1,28 @@
+.layout {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.layout-top {}
+
+.layout-bottom {
+    display: flex;
+    height: 868px;
+    gap: 113px;
+    margin: 0 auto;
+
+}
+
+.layout-left {
+    background-color: red;
+    width: 368px;
+
+}
+
+.layout-content {
+    background-color: orange;
+    width: 958px;
+
+}

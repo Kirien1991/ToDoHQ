@@ -1,5 +1,6 @@
 //base
 @import "./base/base";
+@import "./base/layout";
 @import "./base/mixin";
 @import "./base/reset";
 @import "./base/vars";
@@ -8,3 +9,4 @@
 @import "./block/logo";
 @import "./block/search";
 @import "./block/dates";
+@import "./block/register";

@@ -5,14 +5,24 @@
 
     &__content {
         display: flex;
-        justify-content: space-between;
+        gap: 151px;
     }
 
-    &__logoblock {}
+    &__flex {
+        display: flex;
+        align-items: center;
+        gap: 81px;
+    }
 
     &__item {
         display: flex;
-        align-items: center;
-
+        gap: 37px;
     }
+
+    &__icon {
+        display: flex;
+        gap: 6px;
+    }
+
+
 }

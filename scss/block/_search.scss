@@ -1,11 +1,9 @@
 .search {
     width: 695px;
-    margin-right: 128px;
 
     &__form {
         display: flex;
         border-radius: 8px;
-        overflow: hidden;
         box-shadow: 5px 21px 28px 0px rgba(0, 0, 0, 0.07);
     }
 
@@ -26,9 +24,4 @@
     }
 }
 
-.search-button {
-    img {
-        width: 36px;
-        height: 36px;
-    }
-}
+.search-button {}
