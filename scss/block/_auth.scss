@@ -19,53 +19,60 @@
     gap: 22px;
 }
 
-.auth-group {
-    width: 559px;
-    border-radius: 8px;
-    border: 1px solid $border;
+.auth-input {
     display: flex;
     align-items: center;
     padding: 15px;
     gap: 26px;
+    border-radius: 8px;
+    border: 1px solid $border;
+    width: 559px;
+
+
+    img {
+        width: 28px;
+        height: 28px;
+
+        &:nth-child(2n) {
+            width: 22px;
+            height: 22px;
+        }
+
+        &:nth-child(3) {
+            width: 20px;
+            height: 20px;
+        }
+
+        &:nth-child(4) {
+            width: 25px;
+            height: 20px;
+        }
+
+        &:nth-child(5) {
+            width: 20px;
+            height: 26px;
+        }
+
+        &:nth-child(6) {
+            width: 20px;
+            height: 26px;
+        }
+    }
+
+
+    input {
+
+        &::placeholder {
+            font-family: $font-montserrat;
+            font-weight: 500;
+            font-size: 16px;
+            color: $register;
+        }
+    }
 }
 
-.auth-link {}
-
-.auth-img {
-    width: 28px;
-    height: 28px;
-
-    &:nth-child(2n) {
-        width: 22px;
-        height: 22px;
-    }
-
-    &:nth-child(3) {
-        width: 20px;
-        height: 20px;
-    }
-
-    &:nth-child(4) {
-        width: 25px;
-        height: 20px;
-    }
-
-    &:nth-child(5) {
-        width: 20px;
-        height: 26px;
-    }
-
-    &:nth-child(6) {
-        width: 20px;
-        height: 26px;
-    }
-}
-
-.auth-input {
-    &::placeholder {
-        font-family: $font-montserrat;
-        font-weight: 500;
-        font-size: 16px;
-        color: $register;
-    }
+.auth-buttons {
+    max-width: 559px;
+    font-family: $font-montserrat;
+    margin-top: 31px;
 }

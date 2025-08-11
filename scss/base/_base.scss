@@ -30,3 +30,28 @@ html body {
 
   &__date {}
 }
+
+.checkbox-container {
+  display: flex;
+  margin-bottom: 20px;
+  cursor: pointer;
+  gap: 25px;
+
+  input {
+    cursor: pointer;
+    height: 18px;
+    width: 18px;
+    background-color: #eee;
+    border: 1px solid $border;
+  }
+}
+
+.checkbox {}
+
+
+.terms-text {
+  font-family: $font-montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  color: $registertitle;
+}
