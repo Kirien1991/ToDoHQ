@@ -80,7 +80,6 @@ html body {
   margin: 0 auto;
   background-color: #FFFFFF;
   border-radius: 10px;
-  border: 1px solid #565454;
   display: flex;
 }
 .layout-auth__left {
@@ -276,7 +275,8 @@ input[type=file] {
 }
 
 .auth {
-  padding: 39px 13px 0px 13px;
+  padding: 39px 0px;
+  height: 100%;
 }
 
 .auth-title {
@@ -284,9 +284,6 @@ input[type=file] {
   font-weight: 700;
   font-size: 36px;
   color: #212427;
-}
-
-.aut-konvert {
   margin-top: 21px;
 }
 
@@ -303,31 +300,6 @@ input[type=file] {
   gap: 26px;
   border-radius: 8px;
   border: 1px solid #565454;
-  width: 559px;
-}
-.auth-input img {
-  width: 28px;
-  height: 28px;
-}
-.auth-input img:nth-child(2n) {
-  width: 22px;
-  height: 22px;
-}
-.auth-input img:nth-child(3) {
-  width: 20px;
-  height: 20px;
-}
-.auth-input img:nth-child(4) {
-  width: 25px;
-  height: 20px;
-}
-.auth-input img:nth-child(5) {
-  width: 20px;
-  height: 26px;
-}
-.auth-input img:nth-child(6) {
-  width: 20px;
-  height: 26px;
 }
 .auth-input input::placeholder {
   font-family: "Montserrat", serif;
