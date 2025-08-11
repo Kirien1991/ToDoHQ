@@ -1,0 +1,45 @@
+.auth {
+    padding: 39px 13px 0px 13px;
+}
+
+.auth-title {
+    font-family: $font-montserrat;
+    font-weight: 700;
+    font-size: 36px;
+    color: $registertitle;
+}
+
+.aut-konvert {
+    margin-top: 21px;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.auth-group {
+    width: 559px;
+    border-radius: 8px;
+    border: 1px solid $border;
+    display: flex;
+    align-items: center;
+    padding: 18px;
+}
+
+.auth-link {}
+
+.auth-img {
+    width: 22px;
+    height: 22px;
+}
+
+.auth-input {
+    &::placeholder {
+        font-family: $font-montserrat;
+        font-weight: 500;
+        font-size: 16px;
+        color: $register;
+    }
+}

@@ -66,7 +66,7 @@ html body {
   width: 50%;
 }
 .layout-auth__left img {
-  margin-top: 103px;
+  margin-top: 106px;
 }
 .layout-auth__right {
   width: 50%;
@@ -254,19 +254,28 @@ input[type=file] {
   font-size: 14px;
 }
 
-.register-title {
+.auth {
+  padding: 39px 13px 0px 13px;
+}
+
+.auth-title {
   font-family: "Montserrat", serif;
   font-weight: 700;
   font-size: 36px;
   color: #212427;
 }
 
-.register-form {
+.aut-konvert {
+  margin-top: 21px;
+}
+
+.auth-form {
   display: flex;
   flex-direction: column;
   gap: 22px;
 }
-.register-form__group {
+
+.auth-group {
   width: 559px;
   border-radius: 8px;
   border: 1px solid #565454;
@@ -274,13 +283,15 @@ input[type=file] {
   align-items: center;
   padding: 18px;
 }
-.register-form__group input::placeholder {
+
+.auth-img {
+  width: 22px;
+  height: 22px;
+}
+
+.auth-input::placeholder {
   font-family: "Montserrat", serif;
   font-weight: 500;
   font-size: 16px;
   color: #999999;
-}
-.register-form__group label img {
-  width: 22px;
-  height: 22px;
 }
