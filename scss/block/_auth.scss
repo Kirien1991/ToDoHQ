@@ -25,14 +25,40 @@
     border: 1px solid $border;
     display: flex;
     align-items: center;
-    padding: 18px;
+    padding: 15px;
+    gap: 26px;
 }
 
 .auth-link {}
 
 .auth-img {
-    width: 22px;
-    height: 22px;
+    width: 28px;
+    height: 28px;
+
+    &:nth-child(2n) {
+        width: 22px;
+        height: 22px;
+    }
+
+    &:nth-child(3) {
+        width: 20px;
+        height: 20px;
+    }
+
+    &:nth-child(4) {
+        width: 25px;
+        height: 20px;
+    }
+
+    &:nth-child(5) {
+        width: 20px;
+        height: 26px;
+    }
+
+    &:nth-child(6) {
+        width: 20px;
+        height: 26px;
+    }
 }
 
 .auth-input {

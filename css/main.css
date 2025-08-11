@@ -281,12 +281,33 @@ input[type=file] {
   border: 1px solid #565454;
   display: flex;
   align-items: center;
-  padding: 18px;
+  padding: 15px;
+  gap: 26px;
 }
 
 .auth-img {
+  width: 28px;
+  height: 28px;
+}
+.auth-img:nth-child(2n) {
   width: 22px;
   height: 22px;
+}
+.auth-img:nth-child(3) {
+  width: 20px;
+  height: 20px;
+}
+.auth-img:nth-child(4) {
+  width: 25px;
+  height: 20px;
+}
+.auth-img:nth-child(5) {
+  width: 20px;
+  height: 26px;
+}
+.auth-img:nth-child(6) {
+  width: 20px;
+  height: 26px;
 }
 
 .auth-input::placeholder {
