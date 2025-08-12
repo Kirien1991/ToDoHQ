@@ -1,6 +1,11 @@
 .auth {
-    padding: 39px 0px;
+    padding: 38px 0px;
     height: 100%;
+
+    &--register {
+        padding-left: 12px;
+        padding-right: 47px;
+    }
 }
 
 .auth-title {
@@ -8,7 +13,7 @@
     font-weight: 700;
     font-size: 36px;
     color: $registertitle;
-    margin-top: 21px;
+    margin-bottom: 21px;
 }
 
 .aut-konvert {}
@@ -22,13 +27,11 @@
 .auth-input {
     display: flex;
     align-items: center;
-    padding: 15px;
+    padding: 20px 70px;
     gap: 26px;
     border-radius: 8px;
     border: 1px solid $border;
-
-    img {}
-
+    position: relative;
 
     input {
 
@@ -40,6 +43,29 @@
         }
     }
 }
+
+.auth-img {
+    position: absolute;
+    top: 15px;
+    left: 17px;
+
+    &--username {
+        top: 19px;
+        left: 22px;
+    }
+
+    &--emale {
+        top: 20px;
+        left: 19px;
+    }
+
+    &--password {
+        top: 15px;
+        left: 22px;
+    }
+}
+
+
 
 .auth-buttons {
     max-width: 559px;
