@@ -27,7 +27,7 @@ html body {
   display: flex;
   margin-bottom: 20px;
   cursor: pointer;
-  gap: 25px;
+  gap: 26px;
 }
 .checkbox-container input {
   cursor: pointer;
@@ -335,4 +335,30 @@ input[type=file] {
   max-width: 559px;
   font-family: "Montserrat", serif;
   margin-top: 31px;
+}
+
+.auth-btn {
+  min-width: 129px;
+  padding: 20px;
+  background-color: #FF9090;
+  color: #F8F9FB;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.auth-login {
+  margin-top: 16px;
+  display: flex;
+  gap: 4px;
+  padding: 2px;
+  font-family: "Montserrat", serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+.auth-login span {
+  color: #212427;
+}
+
+.auth-link {
+  color: #0c8ce9;
 }
