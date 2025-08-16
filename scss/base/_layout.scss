@@ -51,10 +51,27 @@
         img {
             margin-top: 106px;
         }
+
+        &--login {
+
+            img {
+                margin-top: 0px;
+            }
+        }
     }
 
     &__right {
         width: 50%;
 
+        &--login {
+            position: relative;
+
+            img {
+                position: absolute;
+                top: 201px;
+                right: 14px;
+            }
+        }
     }
+
 }

@@ -6,6 +6,10 @@
         padding-left: 12px;
         padding-right: 47px;
     }
+
+    &--login {
+        padding: 144px 10px 0 50px;
+    }
 }
 
 .auth-title {
@@ -14,6 +18,10 @@
     font-size: 36px;
     color: $registertitle;
     margin-bottom: 21px;
+
+    &--login {
+        margin-bottom: 24px;
+    }
 }
 
 .aut-konvert {}
@@ -21,19 +29,27 @@
 .auth-form {
     display: flex;
     flex-direction: column;
-    gap: 22px;
+    gap: 21px;
+
+    &--login {
+        gap: 24px;
+    }
 }
 
 .auth-input {
     display: flex;
     align-items: center;
     padding: 20px 70px;
-    gap: 26px;
     border-radius: 8px;
     border: 1px solid $border;
     position: relative;
 
     input {
+        font-family: $font-montserrat;
+        color: $dark;
+        font-size: 16px;
+        width: 100%;
+        height: 100%;
 
         &::placeholder {
             font-family: $font-montserrat;
@@ -41,6 +57,7 @@
             font-size: 16px;
             color: $register;
         }
+
     }
 }
 
@@ -70,7 +87,11 @@
 .auth-buttons {
     max-width: 559px;
     font-family: $font-montserrat;
-    margin-top: 31px;
+    margin-top: 30px;
+
+    &--login {
+        margin-top: 26px;
+    }
 }
 
 .auth-btn {
@@ -83,8 +104,9 @@
 }
 
 .auth-login {
-    margin-top: 16px;
+    margin-top: 17px;
     display: flex;
+    align-items: center;
     gap: 4px;
     padding: 2px;
     font-family: $font-montserrat;
@@ -93,6 +115,23 @@
 
     span {
         color: $registertitle;
+    }
+
+    &__box {
+        display: flex;
+        gap: 11px;
+    }
+
+    &--login {
+        margin-top: 67px;
+        gap: 21px;
+        padding: 0;
+    }
+
+    &--bottom {
+        gap: 5px;
+        padding: 0;
+        margin-top: 15px;
     }
 }
 

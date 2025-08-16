@@ -36,6 +36,9 @@ html body {
   background-color: #eee;
   border: 1px solid #565454;
 }
+.checkbox-container--login {
+  margin-bottom: 26px;
+}
 
 .terms-text {
   font-family: "Montserrat", serif;
@@ -88,8 +91,19 @@ html body {
 .layout-auth__left img {
   margin-top: 106px;
 }
+.layout-auth__left--login img {
+  margin-top: 0px;
+}
 .layout-auth__right {
   width: 50%;
+}
+.layout-auth__right--login {
+  position: relative;
+}
+.layout-auth__right--login img {
+  position: absolute;
+  top: 201px;
+  right: 14px;
 }
 
 /* Reset and base styles  */
@@ -282,6 +296,9 @@ input[type=file] {
   padding-left: 12px;
   padding-right: 47px;
 }
+.auth--login {
+  padding: 144px 10px 0 50px;
+}
 
 .auth-title {
   font-family: "Montserrat", serif;
@@ -290,21 +307,33 @@ input[type=file] {
   color: #212427;
   margin-bottom: 21px;
 }
+.auth-title--login {
+  margin-bottom: 24px;
+}
 
 .auth-form {
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  gap: 21px;
+}
+.auth-form--login {
+  gap: 24px;
 }
 
 .auth-input {
   display: flex;
   align-items: center;
   padding: 20px 70px;
-  gap: 26px;
   border-radius: 8px;
   border: 1px solid #565454;
   position: relative;
+}
+.auth-input input {
+  font-family: "Montserrat", serif;
+  color: #000000;
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
 }
 .auth-input input::placeholder {
   font-family: "Montserrat", serif;
@@ -334,7 +363,10 @@ input[type=file] {
 .auth-buttons {
   max-width: 559px;
   font-family: "Montserrat", serif;
-  margin-top: 31px;
+  margin-top: 30px;
+}
+.auth-buttons--login {
+  margin-top: 26px;
 }
 
 .auth-btn {
@@ -347,8 +379,9 @@ input[type=file] {
 }
 
 .auth-login {
-  margin-top: 16px;
+  margin-top: 17px;
   display: flex;
+  align-items: center;
   gap: 4px;
   padding: 2px;
   font-family: "Montserrat", serif;
@@ -357,6 +390,20 @@ input[type=file] {
 }
 .auth-login span {
   color: #212427;
+}
+.auth-login__box {
+  display: flex;
+  gap: 11px;
+}
+.auth-login--login {
+  margin-top: 67px;
+  gap: 21px;
+  padding: 0;
+}
+.auth-login--bottom {
+  gap: 5px;
+  padding: 0;
+  margin-top: 15px;
 }
 
 .auth-link {

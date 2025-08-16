@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <div class="layout-auth">
+      <div class="layout-auth__content">
+        <div class="layout-auth__left layout-auth__left--login">
+          <div class="auth auth--login">
+            <h2 class="auth-title auth-title--login">Sign In</h2>
+            <div class="aut-konvert">
+              <div class="auth-form auth-form--login">
+                <label class="auth-input">
+                  <img
+                    src="/image/register/register-form/username.svg"
+                    class="auth-img auth-img--username"
+                    alt="username"
+                  />
+                  <input type="text" placeholder="Enter Username" />
+                </label>
+
+                <label class="auth-input">
+                  <img
+                    src="/image/register/register-form/password.svg"
+                    class="auth-img auth-img--password"
+                    alt="password"
+                  />
+                  <input type="password" placeholder="Enter Password" />
+                </label>
+              </div>
+
+              <div class="auth-buttons auth-buttons--login">
+                <div class="auth-agreement">
+                  <label class="checkbox-container checkbox-container--login">
+                    <input type="checkbox" />
+                    <span class="terms-text">Remember Me</span>
+                  </label>
+                </div>
+
+                <button class="auth-btn">Login</button>
+
+                <div class="auth-login auth-login--login">
+                  <span>Or, Login with </span>
+                  <div class="auth-login__box">
+                    <a href="#">
+                      <img src="./image/login/facebook.svg" alt="facebook" />
+                    </a>
+
+                    <a href="#">
+                      <img src="./image/login/google.svg" alt="facebook" />
+                    </a>
+
+                    <a href="#">
+                      <img src="./image/login/x.svg" alt="facebook" />
+                    </a>
+                  </div>
+                </div>
+
+                <div class="auth-login auth-login--bottom">
+                  <span>Don’t have an account?</span>
+                  <a href="#" class="auth-link">Create One</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="layout-auth__right layout-auth__right--login">
+          <img src="/image/login/login.svg" alt="register" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
