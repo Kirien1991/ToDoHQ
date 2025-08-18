@@ -28,7 +28,13 @@
 
 }
 
-//register
+html body:has(.layout-auth) {
+    height: 100%;
+    overflow: hidden;
+
+}
+
+//register login
 .layout-auth {
     background-color: $pink;
     background-image: url('/image/register/register.png');

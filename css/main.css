@@ -23,28 +23,56 @@ html body {
   height: 15px;
 }
 
-.checkbox-container {
+.custom-checkbox {
+  position: relative;
   display: flex;
-  margin-bottom: 20px;
   cursor: pointer;
+  user-select: none;
   gap: 26px;
 }
-.checkbox-container input {
+.custom-checkbox__input {
+  position: absolute;
+  opacity: 0;
   cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.custom-checkbox:hover .checkmark {
+  background-color: #ddd;
+}
+.custom-checkbox__checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 18px;
   width: 18px;
-  background-color: #eee;
+  background-color: #fff;
   border: 1px solid #565454;
+  transition: all 0.3s;
 }
-.checkbox-container--login {
-  margin-bottom: 26px;
+.custom-checkbox__checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
 }
-
-.terms-text {
+.custom-checkbox__text {
   font-family: "Montserrat", serif;
   font-size: 16px;
   font-weight: 500;
   color: #212427;
+  position: absolute;
+  left: 44px;
+}
+
+.custom-checkbox__input:checked ~ .custom-checkbox__checkmark:after {
+  display: block;
 }
 
 .layout {
@@ -68,6 +96,11 @@ html body {
 .layout-content {
   background-color: orange;
   width: 958px;
+}
+
+html body:has(.layout-auth) {
+  height: 100%;
+  overflow: hidden;
 }
 
 .layout-auth {
@@ -323,10 +356,20 @@ input[type=file] {
 .auth-input {
   display: flex;
   align-items: center;
-  padding: 20px 70px;
+  padding: 20px 20px 20px 69px;
   border-radius: 8px;
   border: 1px solid #565454;
   position: relative;
+}
+.auth-input span {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 15px;
+  left: 18px;
 }
 .auth-input input {
   font-family: "Montserrat", serif;
@@ -342,24 +385,6 @@ input[type=file] {
   color: #999999;
 }
 
-.auth-img {
-  position: absolute;
-  top: 15px;
-  left: 17px;
-}
-.auth-img--username {
-  top: 19px;
-  left: 22px;
-}
-.auth-img--emale {
-  top: 20px;
-  left: 19px;
-}
-.auth-img--password {
-  top: 15px;
-  left: 22px;
-}
-
 .auth-buttons {
   max-width: 559px;
   font-family: "Montserrat", serif;
@@ -367,6 +392,12 @@ input[type=file] {
 }
 .auth-buttons--login {
   margin-top: 26px;
+}
+.auth-buttons__checkbox {
+  margin-bottom: 20px;
+}
+.auth-buttons__checkbox--login {
+  margin-bottom: 45px;
 }
 
 .auth-btn {
@@ -393,6 +424,7 @@ input[type=file] {
 }
 .auth-login__box {
   display: flex;
+  align-items: center;
   gap: 11px;
 }
 .auth-login--login {

@@ -39,10 +39,21 @@
 .auth-input {
     display: flex;
     align-items: center;
-    padding: 20px 70px;
+    padding: 20px 20px 20px 69px;
     border-radius: 8px;
     border: 1px solid $border;
     position: relative;
+
+    span {
+        display: flex;
+        width: 30px;
+        height: 30px;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 15px;
+        left: 18px;
+    }
 
     input {
         font-family: $font-montserrat;
@@ -61,29 +72,6 @@
     }
 }
 
-.auth-img {
-    position: absolute;
-    top: 15px;
-    left: 17px;
-
-    &--username {
-        top: 19px;
-        left: 22px;
-    }
-
-    &--emale {
-        top: 20px;
-        left: 19px;
-    }
-
-    &--password {
-        top: 15px;
-        left: 22px;
-    }
-}
-
-
-
 .auth-buttons {
     max-width: 559px;
     font-family: $font-montserrat;
@@ -91,6 +79,14 @@
 
     &--login {
         margin-top: 26px;
+    }
+
+    &__checkbox {
+        margin-bottom: 20px;
+
+        &--login {
+            margin-bottom: 45px;
+        }
     }
 }
 
@@ -119,6 +115,7 @@
 
     &__box {
         display: flex;
+        align-items: center;
         gap: 11px;
     }
 

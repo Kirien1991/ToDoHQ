@@ -31,31 +31,60 @@ html body {
   &__date {}
 }
 
-.checkbox-container {
+.custom-checkbox {
+  position: relative;
   display: flex;
-  margin-bottom: 20px;
   cursor: pointer;
+  user-select: none;
   gap: 26px;
 
-  input {
+
+  &__input {
+    position: absolute;
+    opacity: 0;
     cursor: pointer;
-    height: 18px;
-    width: 18px;
-    background-color: #eee;
-    border: 1px solid $border;
+    height: 0;
+    width: 0;
   }
 
-  &--login {
-    margin-bottom: 26px;
+  &:hover .checkmark {
+    background-color: #ddd;
+  }
+
+  &__checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #fff;
+    border: 1px solid $border;
+    transition: all 0.3s;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: none;
+      left: 6px;
+      top: 2px;
+      width: 5px;
+      height: 10px;
+      border: solid black;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+  }
+
+  &__text {
+    font-family: $font-montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    color: $registertitle;
+    position: absolute;
+    left: 44px;
   }
 }
 
-.checkbox {}
-
-
-.terms-text {
-  font-family: $font-montserrat;
-  font-size: 16px;
-  font-weight: 500;
-  color: $registertitle;
+.custom-checkbox__input:checked~.custom-checkbox__checkmark:after {
+  display: block;
 }
