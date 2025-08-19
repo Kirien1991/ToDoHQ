@@ -2,7 +2,7 @@
 .layout {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 58px;
 }
 
 
@@ -11,14 +11,13 @@
 .layout-bottom {
     display: flex;
     height: 868px;
-    gap: 113px;
-    margin: 0 auto;
+    gap: 76px;
+    margin: 0 20px 20px 160px;
 
 }
 
 .layout-left {
-    background-color: red;
-    width: 368px;
+    width: 330px;
 
 }
 

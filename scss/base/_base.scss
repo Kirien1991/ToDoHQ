@@ -38,17 +38,12 @@ html body {
   user-select: none;
   gap: 26px;
 
-
   &__input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
     height: 0;
     width: 0;
-  }
-
-  &:hover .checkmark {
-    background-color: #ddd;
   }
 
   &__checkmark {
@@ -87,4 +82,5 @@ html body {
 
 .custom-checkbox__input:checked~.custom-checkbox__checkmark:after {
   display: block;
+
 }

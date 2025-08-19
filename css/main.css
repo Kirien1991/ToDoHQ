@@ -37,9 +37,6 @@ html body {
   height: 0;
   width: 0;
 }
-.custom-checkbox:hover .checkmark {
-  background-color: #ddd;
-}
 .custom-checkbox__checkmark {
   position: absolute;
   top: 0;
@@ -78,19 +75,18 @@ html body {
 .layout {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 58px;
 }
 
 .layout-bottom {
   display: flex;
   height: 868px;
-  gap: 113px;
-  margin: 0 auto;
+  gap: 76px;
+  margin: 0 20px 20px 160px;
 }
 
 .layout-left {
-  background-color: red;
-  width: 368px;
+  width: 330px;
 }
 
 .layout-content {
@@ -254,7 +250,7 @@ input[type=file] {
 .header {
   background-color: #F8F8F8;
   box-shadow: 0 4px 12px 0px rgba(0, 0, 0, 0.07);
-  padding: 38px 0 24px 0;
+  padding: 36px 0 24px 0;
 }
 .header__content {
   display: flex;
@@ -440,4 +436,11 @@ input[type=file] {
 
 .auth-link {
   color: #0c8ce9;
+}
+
+.rektangle {
+  background-color: #FF6767;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  height: 100%;
 }
