@@ -92,6 +92,7 @@ html body {
 .layout-content {
   background-color: orange;
   width: 958px;
+  margin-bottom: 32px;
 }
 
 html body:has(.layout-auth) {
@@ -318,7 +319,7 @@ input[type=file] {
 }
 
 .auth {
-  padding: 38px 0px;
+  padding: 37px 0px;
   height: 100%;
 }
 .auth--register {
@@ -352,7 +353,7 @@ input[type=file] {
 .auth-input {
   display: flex;
   align-items: center;
-  padding: 20px 20px 20px 69px;
+  padding: 20px 20px 20px 68px;
   border-radius: 8px;
   border: 1px solid #565454;
   position: relative;
@@ -394,6 +395,10 @@ input[type=file] {
 }
 .auth-buttons__checkbox--login {
   margin-bottom: 45px;
+}
+
+.auth-agreement {
+  margin-bottom: 40px;
 }
 
 .auth-btn {
@@ -438,9 +443,41 @@ input[type=file] {
   color: #0c8ce9;
 }
 
-.rektangle {
+.info {
   background-color: #FF6767;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
   height: 100%;
+  padding-right: 0% 38px;
+}
+.info__profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 12px;
+}
+.data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1px;
+}
+.data__txt {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  color: #FFFFFF;
+}
+.data__link {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  color: #FFFFFF;
 }

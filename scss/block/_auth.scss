@@ -1,5 +1,5 @@
 .auth {
-    padding: 38px 0px;
+    padding: 37px 0px;
     height: 100%;
 
     &--register {
@@ -39,7 +39,7 @@
 .auth-input {
     display: flex;
     align-items: center;
-    padding: 20px 20px 20px 69px;
+    padding: 20px 20px 20px 68px;
     border-radius: 8px;
     border: 1px solid $border;
     position: relative;
@@ -88,6 +88,10 @@
             margin-bottom: 45px;
         }
     }
+}
+
+.auth-agreement {
+    margin-bottom: 40px;
 }
 
 .auth-btn {
