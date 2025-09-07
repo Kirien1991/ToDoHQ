@@ -451,14 +451,16 @@ input[type=file] {
   height: 100%;
   padding-right: 0% 38px;
   padding: 0 21px;
+  display: flex;
+  flex-direction: column;
 }
 
 .sidebarProfile {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: -38px;
-  margin-bottom: 18px;
+  margin-left: -37px;
+  margin-bottom: 17px;
 }
 .sidebarProfile__avatar {
   display: flex;
@@ -610,4 +612,25 @@ input[type=file] {
   width: 20px;
   text-align: center;
   color: #64748b;
+}
+
+.sidebarConvert {
+  margin-top: auto;
+  margin-bottom: 23px;
+}
+
+.sidebarButton__menu {
+  height: 59px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #FFFFFF;
+  border-radius: 14px;
+  padding: 10px 15px;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 10px;
+}
+.sidebarButton__menu:hover {
+  background-color: #FFFFFF;
+  color: #FF6767;
 }
