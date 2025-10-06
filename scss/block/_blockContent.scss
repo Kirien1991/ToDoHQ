@@ -1,0 +1,22 @@
+.blockContent {
+    display: flex;
+
+    &__top {}
+
+    &__topLeft {
+        display: flex;
+
+        h3 {
+            color: $dark;
+            font-size: 36px;
+        }
+    }
+
+    &__bottom {
+        max-width: 958px;
+        min-height: 761px;
+        opacity: 0.63;
+        border: 1px solid $grey;
+
+    }
+}

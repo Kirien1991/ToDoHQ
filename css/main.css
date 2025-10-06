@@ -77,6 +77,7 @@ html body {
   display: flex;
   flex-direction: column;
   gap: 58px;
+  background-color: #F5F8FF;
 }
 
 .layout-bottom {
@@ -91,7 +92,7 @@ html body {
 }
 
 .layout-content {
-  background-color: orange;
+  background-color: #F5F8FF;
   width: 958px;
   margin-bottom: 32px;
 }
@@ -633,4 +634,20 @@ input[type=file] {
 .sidebarButton__menu:hover {
   background-color: #FFFFFF;
   color: #FF6767;
+}
+.blockContent {
+  display: flex;
+}
+.blockContent__topLeft {
+  display: flex;
+}
+.blockContent__topLeft h3 {
+  color: #000000;
+  font-size: 36px;
+}
+.blockContent__bottom {
+  max-width: 958px;
+  min-height: 761px;
+  opacity: 0.63;
+  border: 1px solid #A1A3AB;
 }
